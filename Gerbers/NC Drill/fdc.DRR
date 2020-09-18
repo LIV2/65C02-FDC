@@ -1,0 +1,18 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: fdc.CMPcbDoc   18/09/2020  3:28:36 PM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : fdc.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        15mil (0.381mm)          Round          25               10.58 Inch (268.68 mm)
+T2        25mil (0.635mm)          Round          6                0.50 Inch (12.70 mm)
+T3        28mil (0.7112mm)         Round          3                2.42 Inch (61.39 mm)
+T4        30mil (0.762mm)          Round          108              18.26 Inch (463.84 mm)
+T5        40mil (1.016mm)          Round          34               3.90 Inch (99.06 mm)
+---------------------------------------------------------------------------
+Totals                                            176              35.66 Inch (905.67 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

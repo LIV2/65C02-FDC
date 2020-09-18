@@ -1,0 +1,20 @@
+Name     FDCGLUE;
+PartNo   00;
+Date     23/05/2020;
+Revision 01;
+Designer Matt Harlum;
+Company  None;
+Assembly None;
+Location None;
+Device   g16v8a;
+
+
+ORDER: CLK, A7..A0, !RESET, FDCIRQ, !CS, FDCRESET, IRQ; 
+
+
+VECTORS:
+1 'DE' 10LL*
+0 '00' 00***
+1 '00' 01***
+0 '00' 10***
+1 '00' 11***

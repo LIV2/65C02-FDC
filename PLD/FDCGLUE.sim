@@ -1,0 +1,46 @@
+%SIGNAL
+PIN   2 =  A0 
+PIN   3 =  A1 
+PIN   4 =  A2 
+PIN   5 =  A3 
+PIN   6 =  A4 
+PIN   7 =  A5 
+PIN   8 =  A6 
+PIN   9 =  A7 
+PIN   1 =  CLK 
+PIN  15 = !CS 
+PIN  16 =  FDCIRQ 
+PIN  19 =  FDCRESET 
+PIN  17 = !IRQ 
+PIN  18 = !RESET 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+CS =>
+    A0 & A1 & !A2 & !A3 & A4 & !A5 & A6 & A7
+
+FDCRESET =>
+    !RESET
+
+IRQ =>
+    FDCIRQ
+
+IRQ.oe  =>
+    FDCIRQ
+
+CS.oe  =>
+    1 
+
+FDCIRQ.oe  =>
+    0 
+
+FDCRESET.oe  =>
+    1 
+
+RESET.oe  =>
+    0 
+
+%END

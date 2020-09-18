@@ -1,0 +1,32 @@
+Name     FDCGLUE ;
+PartNo   00 ;
+Date     23/05/2020 ;
+Revision 01 ;
+Designer Matt Harlum ;
+Company  None ;
+Assembly None ;
+Location None ;
+Device   g16v8a ;
+
+/* *************** INPUT PINS *********************/
+PIN 1 = CLK;
+PIN 2 = A0;
+PIN 3 = A1;
+PIN 4 = A2;
+PIN 5 = A3;
+PIN 6 = A4;
+PIN 7 = A5;
+PIN 8 = A6;
+PIN 9 = A7;
+PIN 18 = !RESET;
+PIN 16 = FDCIRQ;
+/* *************** OUTPUT PINS *********************/
+PIN 15 = !CS;
+PIN 19 = FDCRESET;
+PIN 17 = !IRQ;
+
+FDCRESET = RESET;
+CS = A7 & A6 & !A5 & A4 & !A3 & !A2 & A1 & A0; /* FDC selected at $D3XX */
+
+IRQ = FDCIRQ;
+IRQ.OE = FDCIRQ;
